@@ -11,8 +11,23 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sqlite3'
-# bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0',          group: :doc
-gem 'spring',        group: :development
+          
+gem 'spring'       
 gem 'bootstrap-sass'
 
+group :development, :test do
+     gem 'sqlite3'
+end
+
+
+group :production do
+     gem 'pg'
+     gem 'rails_12factor'
+end
+
+
+
+group :doc do
+	# bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', '~> 0.4.0', require: false
+end

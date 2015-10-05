@@ -4,7 +4,7 @@ class PinsController < ApplicationController
   before_action :valid_user, only: [:edit, :update, :destroy]
 
   def index
-    @pins = Pin.all.order("created_at")
+    @pins = Pin.all.order("created_at DESC")
   end
 
   def show

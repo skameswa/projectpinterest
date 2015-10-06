@@ -12,6 +12,7 @@ gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'will_paginate', '~> 3.0.5'
           
 gem 'spring'       
 gem 'bootstrap-sass'
@@ -19,6 +20,7 @@ gem 'devise', '~> 3.5.2'
 gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'aws-sdk', '< 2.0'
 gem 'masonry-rails', '~> 0.2.0'
+gem 'will_paginate-bootstrap'
 
 
 group :development, :test do
